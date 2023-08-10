@@ -1,0 +1,18 @@
+version = 0.1
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::306657534602:user/aws-sam-cli-managed-dev-pipeline-reso-PipelineUser-1MTWZ5PM818MD"
+permissions_provider = "AWS IAM"
+
+[dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::306657534602:role/aws-sam-cli-managed-dev-pipe-PipelineExecutionRole-8WU5O8GGBP89"
+cloudformation_execution_role = "arn:aws:iam::306657534602:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionR-OX59XGCZZ0Y5"
+artifacts_bucket = "aws-sam-cli-managed-dev-pipeline-artifactsbucket-12t8zxrhndj7g"
+image_repository = ""
+region = "us-east-1"
+
+[prod.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::306657534602:role/aws-sam-cli-managed-prod-pip-PipelineExecutionRole-2IH9YPQ30N91"
+cloudformation_execution_role = "arn:aws:iam::306657534602:role/aws-sam-cli-managed-prod-CloudFormationExecutionR-ZQ9QJ0L2L6QQ"
+artifacts_bucket = "aws-sam-cli-managed-prod-pipeline-artifactsbucket-43zc6l68t8c"
+image_repository = ""
+region = "us-east-1"
